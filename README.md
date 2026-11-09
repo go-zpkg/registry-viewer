@@ -1,12 +1,12 @@
 # registry-viewer
 
 A pure-Go, `CGO_ENABLED=0` **WASM** browser app that renders a filterable
-tree-grid of the [`ghcr.io/go-pkgx/packages`](https://github.com/go-pkgx/packages)
+tree-grid of the [`ghcr.io/go-zpkg/packages`](https://github.com/go-zpkg/packages)
 registry — every package across linux, darwin and windows — using the
 [go-widgets/toolkit](https://github.com/go-widgets/toolkit) widget set, drawn to
 a `<canvas>` via [go-widgets/painter](https://github.com/go-widgets/painter).
 
-It powers the landing tree at <https://go-pkgx.github.io/packages/>. Data comes
+It powers the landing tree at <https://go-zpkg.github.io/packages/>. Data comes
 from a `registry.json` emitted by the packages factory's `pages.yml`.
 
 ## What it does
@@ -62,4 +62,4 @@ GOWORK=off go test ./...          # 100% coverage of the scene/filter logic
 
 A render is dumped to `testdata/render.png` for visual inspection.
 
-BSD-3-Clause © the go-pkgx/registry-viewer authors.
+BSD-3-Clause © the go-zpkg/registry-viewer authors.
